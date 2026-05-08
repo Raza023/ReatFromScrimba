@@ -1,0 +1,57 @@
+Code>npm create vite@latest
+Need to install the following packages:
+create-vite@9.0.6
+Ok to proceed? (y) y
+
+> npx
+> create-vite
+
+│
+◇  Project name:
+│  first
+│
+◇  Select a framework:
+│  React
+│
+◇  Select a variant: (select from multiple variants)
+│  JavaScript
+│
+◇  Install with npm and start now?
+│  Yes
+
+////////////////////////////////////////First way to render element to ReactDOM createRoot/////////////////////////////////////////////////
+import { createRoot } from "react-dom/client"
+
+// 2. Get the DOM node where React will take over
+const container = document.getElementById("root")
+
+// 3. Create the React root using the DOM node
+const root = createRoot(container)
+
+// 4. Define what React should render
+// This is still just a plain JavaScript object with a special "type" property.
+const myElement = {
+  type: "h1",
+  props: {
+    children: "Hello from React!",
+  },
+}
+
+// 5. Tell the root to render the element
+root.render(myElement)
+
+////////////////////////////////////////Second way to render element to ReactDOM createRoot/////////////////////////////////////////////////
+import { createRoot } from "react-dom/client"
+
+// 1. Create a root
+const root = createRoot(document.getElementById("root"))
+
+// 2. Render some markup (JSX) to the root
+root.render(<h1>Hello World!</h1>)
+
+////////////////////////////////////////Third way to render element to ReactDOM createRoot/////////////////////////////////////////////////
+import { createRoot } from "react-dom/client"
+createRoot(document.getElementById("root")).render(<h1>Hello World!</h1>)
+////////////////////////////////////////Fourth way to render element to ReactDOM createRoot/////////////////////////////////////////////////
+import ReactDOM from "react-dom/client"
+ReactDOM.createRoot(document.getElementById("root")).render(<h1>Hello World!</h1>)

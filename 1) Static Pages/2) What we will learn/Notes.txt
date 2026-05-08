@@ -1,0 +1,9 @@
+Learn how to "think in react"
+
+Q1) Why we should learn react?
+Q2) How to set up our coding environment for REACT?
+Q3) What is JSX?
+Ans) Fundamental pieces of react which are react elements, and the syntax that React team has created for us. JSX stands for javascript xml. It allows us to write html like syntax inside our javascript code. It is a compile time syntax extension and not a runtime feature. It gets transpiled(convert from one language to other) to javascript code by babel. It is not mandatory to use JSX, we can write plain javascript code as well, but JSX makes it easier to write and read the code.
+Q4) What are Custom Components?
+Ans) Reusable, composable pieces of code using JSX.
+
