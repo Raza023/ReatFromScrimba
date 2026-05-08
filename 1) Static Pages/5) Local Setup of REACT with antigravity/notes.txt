@@ -1,0 +1,5 @@
+npm create vite@latest (to create a project)
+Ctrl + C to stop the server
+cd project (go to actual project directory.)
+npm run build (to build the project for production)
+npm run dev (to start again)
