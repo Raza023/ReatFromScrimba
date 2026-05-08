@@ -1,0 +1,15 @@
+Challenge:
+
+/**
+ * Challenge: Set up a React app from scratch again.
+ * This time, try rendering an unordered list with 2-3 list items inside
+ * with why you're excited to be learning React.
+ */
+import ReactDom from "react-dom/client"
+ReactDom.createRoot(document.querySelector("#root")).render(
+    <ul>
+        <li>I want to be a full stack developer.</li>
+        <li>I want to be professional in react.</li>
+        <li>I want to practice react a lot.</li>
+    </ul>
+)

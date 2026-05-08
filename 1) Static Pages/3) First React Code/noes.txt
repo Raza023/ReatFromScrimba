@@ -18,6 +18,48 @@ Ok to proceed? (y) y
 │
 ◇  Install with npm and start now?
 │  Yes
+│
+◇  Scaffolding project in D:\Data\Work\personal\ReatFromScrimba\1) Static Pages\5) Local Setup of REACT with antigravity\project...
+│
+◇  Installing dependencies with npm...
+
+added 136 packages, and audited 137 packages in 36s
+
+31 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+│
+◇  Starting dev server...
+
+> project@0.0.0 dev
+> vite
+
+
+  VITE v8.0.11  ready in 1475 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+
+
+Terminate batch job (Y/N)? y                   (Ctrl + C to stop the server)
+
+
+D:\Data\Work\personal\ReatFromScrimba\1) Static Pages\5) Local Setup of REACT with antigravity>cd project
+
+D:\Data\Work\personal\ReatFromScrimba\1) Static Pages\5) Local Setup of REACT with antigravity\project>npm run dev
+
+> project@0.0.0 dev
+> vite
+
+
+  VITE v8.0.11  ready in 310 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+
 
 ////////////////////////////////////////First way to render element to ReactDOM createRoot/////////////////////////////////////////////////
 import { createRoot } from "react-dom/client"
