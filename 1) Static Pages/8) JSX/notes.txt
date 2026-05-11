@@ -1,0 +1,27 @@
+JSX (JavaScript XML) is a syntax extension for JavaScript commonly used with React to describe what the UI should look like. It allows developers to write HTML-like structures directly inside JavaScript files, which are then compiled into standard React.createElement() calls by tools like Babel.
+
+////////////////////////////////////Using createElement////////////////////////////
+import { createElement } from "react"
+import { createRoot } from "react-dom/client"
+
+const element = createElement(
+    "h1",               // what HTML tag do we want?
+    { id: "heading" },  // are there any attributes?
+    createElement(
+        "span",
+        null,
+        "Hello world"
+    )
+)
+const root = createRoot(document.getElementById("root"))
+root.render(element)
+
+////////////////////////////Using JSX////////////////////////////
+// import { createElement } from "react" (we don't need this anymore bcz we have jsx)
+import { createRoot } from "react-dom/client"
+
+const element = <h1 id="heading"><span>Hello world</span></h1>
+
+const root = createRoot(document.getElementById("root"))
+root.render(element)
+
