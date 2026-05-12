@@ -59,8 +59,7 @@ body {
     width: 58px;
 
     filter:
-        drop-shadow(0 0 10px rgba(97, 218, 251, 0.7))
-        drop-shadow(0 0 25px rgba(97, 218, 251, 0.35));
+        drop-shadow(0 0 10px rgba(97, 218, 251, 0.7)) drop-shadow(0 0 25px rgba(97, 218, 251, 0.35));
 
     transition:
         transform 0.3s ease,
@@ -191,6 +190,7 @@ h1 {
 
     background: linear-gradient(90deg, #ffffff, #93c5fd, #67e8f9);
 
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
