@@ -1,0 +1,41 @@
+I can have only one parent element in a JSX file. In the example above
+we have two parent elements, so we need to wrap them in a single parent element.
+
+
+We can use a <></> empty fragment to wrap the elements in a single parent element.
+
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import catImage from './assets/cat.png'
+
+
+const root = createRoot(document.getElementById('root'))
+root.render(
+    <>
+        <h1>Hello from React!</h1>
+        <img src={catImage} alt="a cat" className="main-img" />
+    </>
+)
+
+
+and we can also use
+<section> ... </section>,
+<main> ... </main>,
+<header> ... </header>,
+<footer> ... </footer>,
+<article> ... </article>,
+<div> ... </div>,
+<aside> ... </aside>,
+<nav> ... </nav>,
+<figure> ... </figure>,
+<figcaption> ... </figcaption>,
+<blockquote> ... </blockquote>,
+<q> ... </q>,
+<cite> ... </cite>,
+<dfn> ... </dfn>,
+<time> ... </time>,
+<mark> ... </mark>,
+<small> ... </small>,
+<strong> ... </strong>,
+<em> ... </em>,
+etc all semantic elements can be used as a wrapper element.
