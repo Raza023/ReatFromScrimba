@@ -1,0 +1,29 @@
+1. Where does React put all of the elements I create in JSX when I 
+   call `root.render()`?
+
+it puts all the elements inside <div id="root"></div>
+
+
+2. What would show up in my console if I were to run this line of code:
+```
+console.log(<h1>Hello world!</h1>)
+```
+
+
+3. What's wrong with this code:
+```
+root.render(
+    <h1>Hi there</h1>
+    <p>This is my website!</p>
+)
+```
+there can be only one parent element in jsx.
+
+
+4. What does it mean for something to be "declarative" instead of "imperative"?
+Declarative: "What should be done?"
+We just provide code in React and don't need to worry about tedious tasks that how will it be rendered. Our react library will do it.
+
+
+5. What does it mean for something to be "composable"?
+composable means we can create components and reuse them in our application. We don't have to write them again and again.

@@ -1,0 +1,33 @@
+1. What is a React component?
+Ans) composable code that can be reused in ou react application.
+
+
+
+
+2. What's wrong with this code?
+```
+function myComponent() {
+    return (
+        <small>I'm tiny text!</small>
+    )
+}
+```
+Ans) Can't use ' in jsx as it gives error: "Error: Cannot parse given Error object".
+Should not use camel case in custom component name. Should use Pascal case like <MyComponent />
+
+
+
+
+3. What's wrong with this code?
+```
+function Header() {
+    return (
+        <header>
+            <img src="./react-logo.png" width="40px" alt="React logo" />
+        </header>
+    )
+}
+
+root.render(Header())
+```
+Ans) Not using react way to render the custom component.
